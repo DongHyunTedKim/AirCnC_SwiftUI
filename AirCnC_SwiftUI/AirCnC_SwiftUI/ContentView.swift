@@ -44,7 +44,7 @@ private extension ContentView {
                 } label: {
                     Image("right_arrow")
                 }
-
+                
             }
             .padding()
         }
@@ -67,7 +67,7 @@ private extension ContentView {
                     .frame(width: 40, height: 40, alignment: .leading)
                     .clipShape(Circle())
                 Text("프랭키")
-                    
+                
             }
             VStack(spacing: 5){
                 HStack{
