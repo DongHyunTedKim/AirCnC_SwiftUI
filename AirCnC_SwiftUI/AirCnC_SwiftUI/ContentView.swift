@@ -9,6 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var currentImageIndex = 0
+    let images = [
+        "hattefjall_1",
+        "hattefjall_2",
+        "hattefjall_3",
+        "hattefjall_4",
+        "hattefjall_5"
+    ]
+    
     @State var isSelected: Bool = false
     @State private var date = Date()
     
@@ -24,8 +33,8 @@ struct ContentView: View {
 private extension ContentView {
     
     var productImage: some View {
-        ZStack{ // 1
-            Image("hattefjall")
+        ZStack{
+            Image(images[currentImageIndex])
                 .resizable()
                 .scaledToFit()
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width*2/3)
@@ -33,18 +42,23 @@ private extension ContentView {
                 
                 // show prev image
                 Button {
+                    currentImageIndex -= 1
                 } label: {
-                    Image("left_arrow")
+                    Image(currentImageIndex > 0 ? "left_arrow" : "left_arrow_gray")
                 }
+                .disabled(!(currentImageIndex>0))
                 
                 Spacer()
                 
                 // show next image
                 Button {
+                    currentImageIndex += 1
                 } label: {
-                    Image("right_arrow")
+                    Image(currentImageIndex < images.count - 1 ? "right_arrow" : "right_arrow_gray")
                 }
-                
+                .disabled(!(currentImageIndex < images.count - 1))
+
+
             }
             .padding()
         }
@@ -67,7 +81,7 @@ private extension ContentView {
                     .frame(width: 40, height: 40, alignment: .leading)
                     .clipShape(Circle())
                 Text("프랭키")
-                
+                    
             }
             VStack(spacing: 5){
                 HStack{
