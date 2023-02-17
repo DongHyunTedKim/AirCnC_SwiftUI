@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F08C92B299F664D00E9E776 /* Explorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08C92A299F664D00E9E776 /* Explorer.swift */; };
+		9F08C92D299F666000E9E776 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F08C92C299F666000E9E776 /* ProductRow.swift */; };
 		9FFA211A298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA2119298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift */; };
 		9FFA211C298BEC9D001B2D6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA211B298BEC9D001B2D6E /* ContentView.swift */; };
 		9FFA211E298BEC9E001B2D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFA211D298BEC9E001B2D6E /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F08C92A299F664D00E9E776 /* Explorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explorer.swift; sourceTree = "<group>"; };
+		9F08C92C299F666000E9E776 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		9FFA2116298BEC9D001B2D6E /* AirCnC_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirCnC_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFA2119298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCnC_SwiftUIApp.swift; sourceTree = "<group>"; };
 		9FFA211B298BEC9D001B2D6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				9FFA2119298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift */,
+				9F08C92A299F664D00E9E776 /* Explorer.swift */,
+				9F08C92C299F666000E9E776 /* ProductRow.swift */,
 				9FFA211B298BEC9D001B2D6E /* ContentView.swift */,
 				9FFA211D298BEC9E001B2D6E /* Assets.xcassets */,
 				9FFA211F298BEC9E001B2D6E /* Preview Content */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F08C92D299F666000E9E776 /* ProductRow.swift in Sources */,
+				9F08C92B299F664D00E9E776 /* Explorer.swift in Sources */,
 				9FFA211C298BEC9D001B2D6E /* ContentView.swift in Sources */,
 				9FFA211A298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift in Sources */,
 			);

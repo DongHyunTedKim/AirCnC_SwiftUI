@@ -11,7 +11,7 @@ import SwiftUI
 struct AirCnC_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Explorer()
         }
     }
 }
