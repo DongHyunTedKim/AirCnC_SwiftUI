@@ -13,13 +13,13 @@ struct ProductRow: View {
     
     var body: some View {
         HStack {
-            Image(product.productImage)
+            Image(product.thumbnail)
                 .resizable()
                 .frame(width: 40, height: 40)
-            Text(product.productName)
+            Text(product.name)
                 .font(.title3)
             Spacer()
-            Text(product.userName)
+            Text(product.user.name)
                 .font(.subheadline)
         }
         
@@ -28,6 +28,6 @@ struct ProductRow: View {
 
 struct ProductRow_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRow(product: Product(userName: "프랭키", productName: "HATTEFJÄLL", productImage: "hattefjall"))
+        ProductRow(product: productSample)
     }
 }
