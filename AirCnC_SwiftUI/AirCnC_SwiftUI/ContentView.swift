@@ -13,8 +13,6 @@ struct ContentView: View {
     
     @State private var currentImageIndex = 0
     @State private var imageName = ""
-    
-    @State var isSelected: Bool = false
     @State private var date = Date()
     
     var body: some View {
@@ -74,7 +72,7 @@ private extension ContentView {
                 
                 Spacer()
                 
-                LikeButton(isSelected: $isSelected)
+                LikeButton(product: product)
             }
             
             HStack{
@@ -153,14 +151,21 @@ private extension ContentView {
 
 struct LikeButton: View {
     
-    @Binding var isSelected: Bool
+    @EnvironmentObject private var store: Store
+    
+    let product: Product
+    
+    private var imageName: String {
+        guard let indexOfProduct = store.products.firstIndex(of: product) else { return "btn_heart_outline" }
+        return store.products[indexOfProduct].isLiked ? "btn_heart_filled" : "btn_heart_outline"
+    }
     
     var body: some View {
         
         Button(action: {
-            isSelected.toggle()
+            store.toggleLike(of: product)
         }){
-            Image(isSelected ? "btn_heart_filled" : "btn_heart_outline")
+            Image(imageName)
         }
         .padding(10)
     }
@@ -169,6 +174,7 @@ struct LikeButton: View {
 // MARK: - Previews
 struct ContentView_Preview: PreviewProvider {
     static var previews: some View {
-        ContentView(product: productSample)
+        ContentView(product: Store().products[0])
+            .environmentObject(Store())
     }
 }

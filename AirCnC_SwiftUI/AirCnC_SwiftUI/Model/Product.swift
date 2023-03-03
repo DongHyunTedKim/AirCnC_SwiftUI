@@ -16,11 +16,14 @@ struct Product: Identifiable {
     var price: Int
     var size: Size? // 크기 정보는 없을 수도 있다.
     var user: User
+    
+    var isLiked: Bool = false
+}
+
+extension Product: Equatable {
+    static func == (lhs: Product, rhs: Product) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 typealias Size = (w:Int, d:Int, h:Int)
-
-let productSample: Product = Product(name: "MARKUS", thumbnail: "markus",
-                                     detailImage: ["markus_1", "markus_2", "markus_3", "markus_4", "markus_5", "markus_6", "markus_7"],
-                                     price: 20000, size: Size(w: 62, d: 60, h: 140),
-                                     user: User.popo)

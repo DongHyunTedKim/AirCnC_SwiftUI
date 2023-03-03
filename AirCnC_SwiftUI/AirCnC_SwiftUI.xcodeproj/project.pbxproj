@@ -12,6 +12,9 @@
 		9F2D68DF29ADE20C002B0650 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D68DE29ADE20C002B0650 /* Product.swift */; };
 		9F2D68E129ADE21A002B0650 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D68E029ADE21A002B0650 /* User.swift */; };
 		9F2D68E329ADE35B002B0650 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2D68E229ADE35B002B0650 /* Store.swift */; };
+		9FE2E07229B1E32800AB2257 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2E07129B1E32800AB2257 /* ProfileView.swift */; };
+		9FE2E07429B1E35200AB2257 /* LikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2E07329B1E35200AB2257 /* LikedView.swift */; };
+		9FE2E07629B1E39C00AB2257 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE2E07529B1E39C00AB2257 /* MainView.swift */; };
 		9FFA211A298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA2119298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift */; };
 		9FFA211C298BEC9D001B2D6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA211B298BEC9D001B2D6E /* ContentView.swift */; };
 		9FFA211E298BEC9E001B2D6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFA211D298BEC9E001B2D6E /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		9F2D68DE29ADE20C002B0650 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9F2D68E029ADE21A002B0650 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9F2D68E229ADE35B002B0650 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		9FE2E07129B1E32800AB2257 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9FE2E07329B1E35200AB2257 /* LikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedView.swift; sourceTree = "<group>"; };
+		9FE2E07529B1E39C00AB2257 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9FFA2116298BEC9D001B2D6E /* AirCnC_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirCnC_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFA2119298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCnC_SwiftUIApp.swift; sourceTree = "<group>"; };
 		9FFA211B298BEC9D001B2D6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,12 +78,15 @@
 			isa = PBXGroup;
 			children = (
 				9FFA2119298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift */,
+				9FE2E07529B1E39C00AB2257 /* MainView.swift */,
 				9F08C92A299F664D00E9E776 /* Explorer.swift */,
 				9F08C92C299F666000E9E776 /* ProductRow.swift */,
 				9FFA211B298BEC9D001B2D6E /* ContentView.swift */,
 				9FFA211D298BEC9E001B2D6E /* Assets.xcassets */,
 				9F2D68E429ADE409002B0650 /* Model */,
 				9FFA211F298BEC9E001B2D6E /* Preview Content */,
+				9FE2E07329B1E35200AB2257 /* LikedView.swift */,
+				9FE2E07129B1E32800AB2257 /* ProfileView.swift */,
 			);
 			path = AirCnC_SwiftUI;
 			sourceTree = "<group>";
@@ -160,11 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE2E07229B1E32800AB2257 /* ProfileView.swift in Sources */,
 				9F2D68E329ADE35B002B0650 /* Store.swift in Sources */,
 				9F08C92D299F666000E9E776 /* ProductRow.swift in Sources */,
+				9FE2E07629B1E39C00AB2257 /* MainView.swift in Sources */,
 				9F08C92B299F664D00E9E776 /* Explorer.swift in Sources */,
 				9F2D68E129ADE21A002B0650 /* User.swift in Sources */,
 				9F2D68DF29ADE20C002B0650 /* Product.swift in Sources */,
+				9FE2E07429B1E35200AB2257 /* LikedView.swift in Sources */,
 				9FFA211C298BEC9D001B2D6E /* ContentView.swift in Sources */,
 				9FFA211A298BEC9D001B2D6E /* AirCnC_SwiftUIApp.swift in Sources */,
 			);

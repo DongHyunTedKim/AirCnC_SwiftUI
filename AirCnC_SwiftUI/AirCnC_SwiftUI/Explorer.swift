@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Explorer: View {
     
-    let store = Store()
+    @EnvironmentObject var store: Store
     
     var body: some View {
         
@@ -28,5 +28,6 @@ struct Explorer: View {
 struct Explorer_Previews: PreviewProvider {
     static var previews: some View {
         Explorer()
+            .environmentObject(Store())
     }
 }

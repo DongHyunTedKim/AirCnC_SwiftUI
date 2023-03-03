@@ -7,8 +7,29 @@
 
 import Foundation
 
-final class Store {
-    var products: [Product]
+final class Store: ObservableObject {
+    @Published var products: [Product]
+    @Published var likedProducts: [Product] = []
+    
+    func likedProducts(product: [Product]) -> [Product] {
+        let likedProducts = product.filter({ $0.isLiked })
+        return likedProducts
+    }
+    
+    func toggleLike(of product: Product) {
+        guard let indexOfProduct = products.firstIndex(of: product) else { return }
+        products[indexOfProduct].isLiked.toggle()
+
+        // likedProducts에 추가하기
+        if products[indexOfProduct].isLiked {
+            likedProducts.append(product)
+        }
+        // likedProducts에서 삭제하기
+        else {
+            guard let indexOfProduct = likedProducts.firstIndex(of: product) else { return }
+            likedProducts.remove(at: indexOfProduct)
+        }
+    }
     
     // MARK: Initialization
     

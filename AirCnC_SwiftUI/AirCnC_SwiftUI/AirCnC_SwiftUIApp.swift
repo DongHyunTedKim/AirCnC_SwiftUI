@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct AirCnC_SwiftUIApp: App {
+    
+    @StateObject var store = Store()
+    
     var body: some Scene {
         WindowGroup {
-            Explorer()
+            MainView()
+                .environmentObject(store)
         }
     }
 }

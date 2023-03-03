@@ -1,8 +1,9 @@
 # Coder's High AirCnC Example
 
-## Step4 목록 상세
+## Step5 멀티 씬
 
-- 내비게이션 뷰&링크를 이용해서 목록/상세 씬 구조 만들기
-- 복잡한 모델 작성(구조체, 클래스)
+- 탭바 컨트롤러를 이용해서 병렬 씬 구조 만들기
+- 탭 기반의 씬에서 데이터 공유
+- 테이블 뷰에서 항목 삭제
 
-<img src = "https://github.com/DongHyunTedKim/AirCnC_SwiftUI/blob/Step4/Screenshot.png" width = "50%" height = "50%">  
+<img src = "https://github.com/DongHyunTedKim/AirCnC_SwiftUI/blob/Step5/Screenshot.png" width = "50%" height = "50%">  
